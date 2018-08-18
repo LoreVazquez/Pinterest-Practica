@@ -1,91 +1,89 @@
-body{
-  background-color: #FFFFE0;
-  box-sizing: border-box;
-  font-family: 'Bitter', serif;
-
+body {
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+    margin: 0%;
 }
 
-header{
-  background-color: #AFEEEE;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+
+/* Header */
+
+a,
+label {
+    color: rgb(112, 110, 110);
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
-header > * {
-
-  display: inline-block;
-  text-align: center;
+form {
+    background-color: rgb(218, 216, 216);
+    border-radius: 10px;
+    padding: 10px;
+    width: 65%;
 }
 
-header > h1{
-  width: 5%;
+header {
+    background-color: white;
+    border-bottom: 1px solid rgb(112, 110, 110);
+    position: fixed;
+    z-index: 1;
 }
 
-header > form {
-  background-color: gray;
-  padding: 1%;
-  width: 70%;
+input {
+    width: 80%;
 }
 
-header label{
-  width: 10%
+input,
+select {
+    background-color: rgb(218, 216, 216);
+    border: none;
+    color: rgb(112, 110, 110);
+    font-size: 1.1rem;
 }
 
-header input{
-  background-color: lightgray;
-  width: 70%;
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
 }
 
-header select{
-  width: 20%;
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-header > nav {
-  width: 20%;
+#logo {
+    color: rgb(165, 15, 15);
+    padding-left: 15px;
+    width: 5%;
 }
 
-header nav a {
-  margin-left: 2%;
-  padding: 2%;
-}
 
-header ul {
-
-  width: 100%;
-}
-
-header > ul li{
-  background-color: #20B2AA;
-  border: 1px solid white;
-  border-radius: 5px;
-  color: white;
-  display: inline-block;
-  margin-right: 1%;
-  padding: 1%;
-}
+/*Seccion de imagenes*/
 
 main {
-  position:relative;
-  z-index: -1;
-  top: 30vh;
-}
-
-.col {
-  float: left;
-  display: block;
-  margin: 1%;
-  width: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 15vh;
+    width: 100vw;
+    z-index: -1;
 }
 
 img {
-  border: 1px riged black;
-  border-radius: 5%;
-  height: 100%;
-  text-align: center;
-  width: 100%;
+    border: 1px riged black;
+    border-radius: 5%;
+    text-align: center;
+    width: 100%;
 }
 
 img:hover {
-  opacity: 0.5;
+    opacity: 0.4;
+}
+
+.pin {
+    width: 30%;
 }

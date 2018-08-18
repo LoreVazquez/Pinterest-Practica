@@ -1,171 +1,175 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinterest</title>
-    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Anton" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <header>
-      <h1>
-        <i class="fab fa-pinterest"></i>
-        <!-- buscar icono en fontawesome para pinterest -->
-      </h1>
-      <form>
-        <label for="search-input">search</label>
-        <input type="text" id= "search-input">
-        <select class="" name="">
-          <option value="todos">Todos los pines</option>
-          <option value="people">People</option>
-          <option value="pines">Tus Pines</option>
-          <option value="board">Tableros</option>
-          </optgroup>
-        </select>
-      </form>
-      <nav>
-        <a href="#"><i class="fas fa-user"></i></a>
-        <a href="#"><i class="fas fa-bars"></i></a>
-        <a href="#"><i class="fas fa-comment-dots"></i></a>
-      </nav>
-      <hr>
-      <ul>
-        <li>Cheat Sheet</li>
-        <li>Tutorial</li>
-        <li>Code</li>
-        <li>Fun</li>
-        <li>Programming</li>
-        <li>Projects</li>
-        <li>Post</li>
-        <li>Medium</li>
-        <li>Videos</li>
-      </ul>
+</head>
 
+<body>
+    <!--Header-->
+    <header class="container">
+        <h1 id="logo">
+            <i class="fab fa-pinterest"></i>
+        </h1>
+        <form>
+            <label for="search-input"><i class="fas fa-search"></i></label>
+            <input type="search" id="search-input" placeholder="Search">
+            <select class="" name="">
+                <option value="todos">All pins</option>
+                <option value="people">People</option>
+                <option value="pines">Tus Pines</option>
+                <option value="board">Tableros</option>
+              </select>
+        </form>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Following</a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-comment-dots"></i></a>
+            <a href=""><i class="fas fa-bell"></i></a>
+            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+        </nav>
     </header>
     <section>
+        <!--
+        <hr>
+            <ul>
+                <li>Cheat Sheet</li>
+                <li>Tutorial</li>
+                <li>Code</li>
+                <li>Fun</li>
+                <li>Programming</li>
+                <li>Projects</li>
+                <li>Post</li>
+                <li>Medium</li>
+                <li>Videos</li>
+            </ul>-->
 
     </section>
-    <main>
-      <section class= "col">
+    <!--Sección de imagenes-->
+    <main id="board">
         <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBdiHLj8afSz2DD12BCSl9_4QVyWvH6yimxNV7UoTYiYPq1K4u" alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBdiHLj8afSz2DD12BCSl9_4QVyWvH6yimxNV7UoTYiYPq1K4u" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
         </article>
         <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1f3nlrV8S_kE6rN1Tw1jszvSD4BPu0WdzxfIjm4dS_zog-NPi" alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1f3nlrV8S_kE6rN1Tw1jszvSD4BPu0WdzxfIjm4dS_zog-NPi" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
         </article>
         <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpbe_QGTBWEetlBAQHhQUmxVzjSlUSmCGJGa7kyhYCbW0zKavo_w" alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpbe_QGTBWEetlBAQHhQUmxVzjSlUSmCGJGa7kyhYCbW0zKavo_w" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
         </article>
-      </section>
 
-      <section class= "col">
-        <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnFtsaTRMBNoEm13-6wahDznAPPfEPORH9yA8BlaKzowNBCrYR0g" alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
-        </article>
-        <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbBwcwNEzrDgF667_aoaWxdSI1X7WvWL0UINj_aPT_cBbm4qoD" alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
-        </article>
-        <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxun4rh6KqXyI6t-QBEaphc6hDZlaDEGKNjlzY73pdqnqlL_BRg" alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
-        </article>
-      </section>
 
-      <section class= "col">
         <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5eXTDuQTIjKwd4bLwgzm3fd_6GN0CZ0lheA-LDarBA_tkLBG" alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnFtsaTRMBNoEm13-6wahDznAPPfEPORH9yA8BlaKzowNBCrYR0g" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
         </article>
         <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFIjyfl9PJT0L5nN4pPtocduSnqbVWZJU8S0KmR8CFPBFRELg" alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbBwcwNEzrDgF667_aoaWxdSI1X7WvWL0UINj_aPT_cBbm4qoD" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
         </article>
         <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQooy_1_mkiWgCe5j_aEChXvwG01Hv9YMBp4kO_cxUr6OnfTTSd"alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxun4rh6KqXyI6t-QBEaphc6hDZlaDEGKNjlzY73pdqnqlL_BRg" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
         </article>
-      </section>
-      <section class= "col">
+
         <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2lTMqm7BsWFV2qb7HqVTIxl4MkxSxJqOiuI_I_3x17PO4qpIA" alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
-        </article>
-        <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3jbwRhb8maP2iwCpa-brP-FKojX7Lxb_0Y0DPGujF7ARuVinl" alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5eXTDuQTIjKwd4bLwgzm3fd_6GN0CZ0lheA-LDarBA_tkLBG" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
         </article>
         <article class="pin">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjbEDKGqL5WbvnofmQ1Uv2M-lj87nj5sPzXh5jHju5CIzz6IItQ"alt="Imagen de prueba">
-          </div>
-          <section class= "pin-title">
-            <span class= "titulo">Titulo</span>
-            <span class= "more"></span>
-          </section>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFIjyfl9PJT0L5nN4pPtocduSnqbVWZJU8S0KmR8CFPBFRELg" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
         </article>
-      </section>
+        <article class="pin">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQooy_1_mkiWgCe5j_aEChXvwG01Hv9YMBp4kO_cxUr6OnfTTSd" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
+        </article>
+        <article class="pin">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2lTMqm7BsWFV2qb7HqVTIxl4MkxSxJqOiuI_I_3x17PO4qpIA" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
+        </article>
+        <article class="pin">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3jbwRhb8maP2iwCpa-brP-FKojX7Lxb_0Y0DPGujF7ARuVinl" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
+        </article>
+        <article class="pin">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjbEDKGqL5WbvnofmQ1Uv2M-lj87nj5sPzXh5jHju5CIzz6IItQ" alt="Imagen de prueba">
+            </div>
+            <section class="pin-title">
+                <span class="titulo"><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
+                <span class="more"></span>
+            </section>
+        </article>
     </main>
-  </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
 </html>

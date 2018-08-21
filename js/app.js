@@ -10,7 +10,7 @@ $(document).ready(function() {
     }
 
 
-    const armarTemplate = function(id, url, height, width) {
+    const armarTemplate = function(id, url) {
         let t = `<article class="pin">
                     <div id="${id}">
                         <img  src="${url}">
